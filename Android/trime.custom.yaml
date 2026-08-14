@@ -1,0 +1,7 @@
+# Trime custom configuration
+# Sets default theme to tongwenfeng (标准)
+
+config_version: "0.40"
+
+patch:
+  "style/name": tongwenfeng

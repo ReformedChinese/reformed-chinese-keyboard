@@ -1,0 +1,159 @@
+# Rime schema
+# encoding: utf-8
+#
+# Reformed Chinese Input Method (Lua Filter Version)
+# 改革字輸入方案
+
+schema:
+  schema_id: reformed
+  name: 改革字 Reformed Chinese
+  version: "2.0"
+  author:
+    - Westin Juxi Lu <ReformedChinese@gmail.com>
+  description: |
+    Reformed Chinese Characters Input Method
+    改革字拼音輸入法
+    
+    A proposed in-the-middle alternative to Simplified & Traditional Chinese
+    that combines the best of both sets: Traditional's beauty and Simplified's legibility.
+    
+    Based on luna_pinyin (朙月拼音) with a Lua filter that converts Traditional 
+    characters to Reformed equivalents on-the-fly. This preserves all original 
+    frequencies and rankings while showing Reformed characters.
+    
+    Project homepage:
+    https://docs.google.com/spreadsheets/d/1lK39EUCqPZukM4NCPzidQg1L0zzKc6zavR6WR9Z6XZQ/
+  dependencies:
+    - luna_pinyin
+
+switches:
+  - name: ascii_mode
+    reset: 0
+  - name: use_lookalikes
+    reset: 1
+    states: [ "Lookalikes OFF", "Lookalikes ON" ]
+  - name: indicate_lookalikes
+    reset: 0
+    states: [ "Indicate lookalikes OFF", "Indicate lookalikes ON" ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - script_translator
+  filters:
+    - lua_filter@reformed_filter
+    - uniquifier
+
+reformed_archaic:
+  dictionary: reformed_archaic
+  enable_completion: false
+  enable_sentence: false
+  initial_quality: 10  # Higher than script_translator to override preset_vocabulary
+
+speller:
+  alphabet: zyxwvutsrqponmlkjihgfedcba
+  delimiter: " '"
+  algebra:
+    - erase/^xx$/
+    - abbrev/^([a-z]).+$/$1/
+    - abbrev/^([zcs]h).+$/$1/
+    - derive/^([nl])ve$/$1ue/
+    - derive/^([jqxy])u/$1v/
+    - derive/un$/uen/
+    - derive/ui$/uei/
+    - derive/iu$/iou/
+    - derive/([aeiou])ng$/$1gn/
+    - derive/([dtngkhrzcs])o(u|ng)$/$1o/
+    - derive/ong$/on/
+    - derive/ao$/oa/
+    - derive/([iu])a(o|ng?)$/a$1$2/
+
+translator:
+  dictionary: luna_pinyin  # Use system luna_pinyin with natural ordering
+  prism: reformed  # Use reformed prism for custom user dictionary
+  enable_user_dict: true  # Enable learning from user typing patterns
+  enable_sentence: true  # Enable sentence composition
+  enable_completion: true
+  initial_quality: 1.0
+  # Exclude these archaic characters from preset_vocabulary
+  exclude_patterns:
+    - "^僞$"
+    - "^溼$"
+    - "^爲$"
+    - "^衆$"
+    - "^覈$"
+    - "^豔$"
+    - "^麪$"
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+  comment_format:
+    - xform ([aeiou])(ng?|r)([1234]) $1$3$2
+    - xform ([aeo])([iuo])([1234]) $1$3$2
+    - xform a1 ā
+    - xform a2 á
+    - xform a3 ǎ
+    - xform a4 à
+    - xform e1 ē
+    - xform e2 é
+    - xform e3 ě
+    - xform e4 è
+    - xform o1 ō
+    - xform o2 ó
+    - xform o3 ǒ
+    - xform o4 ò
+    - xform i1 ī
+    - xform i2 í
+    - xform i3 ǐ
+    - xform i4 ì
+    - xform u1 ū
+    - xform u2 ú
+    - xform u3 ǔ
+    - xform u4 ù
+    - xform v1 ǖ
+    - xform v2 ǘ
+    - xform v3 ǚ
+    - xform v4 ǜ
+    - xform/([nljqxy])v/$1ü/
+    - xform/eh[0-5]?/ê/
+    - xform/([a-z]+)[0-5]/$1/
+
+punctuator:
+  import_preset: default
+
+key_binder:
+  import_preset: default
+  bindings:
+    - { when: composing, accept: Tab, send: Page_Down }
+    - { when: composing, accept: Shift+Tab, send: Page_Up }
+    - { when: has_menu, accept: minus, send: Page_Up }
+    - { when: has_menu, accept: equal, send: Page_Down }
+
+recognizer:
+  import_preset: default
+  patterns:
+    punct: "^/([0-9]0?|[A-Za-z]+)$"
+
+menu:
+  page_size: 9
+
+style:
+  horizontal: false
+  inline_preedit: true
+  preedit_type: composition

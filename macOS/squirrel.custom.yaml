@@ -1,0 +1,6 @@
+patch:
+  # Always start in Chinese mode (中文), never remember per-app ASCII state
+  app_options:
+    com.apple.Finder:
+      ascii_mode: false
+  ascii_mode: false

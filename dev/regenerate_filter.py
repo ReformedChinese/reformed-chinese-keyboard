@@ -42,7 +42,7 @@ archaic_variants = {
     # User-identified 15
     '僞', '溼', '衆', '薰', '覈', '豔', '麪', '孃', '嬢', '醸', '譲', '壌', '让', '癡', '貍',
     # Archaic variants with Reformed counterparts (suppressed standalone; converted in compounds)
-    '飈', '鍁'
+    '飈', '飊', '飇', '鍁'
 }
 
 # Generate Lua code

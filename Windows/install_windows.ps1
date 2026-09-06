@@ -1,6 +1,5 @@
-﻿# Reformed Chinese Keyboard - Windows Automated Installer
+﻿# Reformed Chinese Keyboard for Windows Automated Installer
 # This script automates the complete installation process for Windows
-# For macOS/Linux installation, see separate installation scripts
 
 # Requires: PowerShell 5.1 or later, Administrator privileges for Weasel installation
 
@@ -44,8 +43,7 @@ function Write-Header {
 # Main installation function
 function Install-ReformedKeyboard {
     Write-Header "Reformed Chinese Keyboard Installer"
-    Write-Info "This will install 改革字 Reformed Chinese keyboard on your Windows PC"
-    Write-Info "Installation will take approximately 5-10 minutes"
+    Write-Info "This will install Reformed Chinese keyboard on your Windows PC"
     Write-Host ""
 
     # Get script directory (Windows subdirectory)
@@ -210,7 +208,7 @@ function Install-ReformedKeyboard {
         Write-Success "Created lua directory: $LuaDir"
     }
     
-    Write-Info "Using UTF-8 encoding preservation (critical for Chinese characters)..."
+    Write-Info "Using UTF-8 encoding preservation..."
     
     # Deploy reformed_filter.lua with UTF-8 preservation
     try {
@@ -259,7 +257,7 @@ function Install-ReformedKeyboard {
         
         # Check for Chinese characters (should be readable, not garbled)
         if ($Content -match "[\u4e00-\u9fff]") {
-            Write-Success "UTF-8 encoding verified - Chinese characters are readable"
+            Write-Success "UTF-8 encoding verified"
         } else {
             Write-Warning "Warning: Could not verify Chinese characters in filter"
         }
@@ -272,7 +270,7 @@ function Install-ReformedKeyboard {
     # Step 6: Deploy and restart Weasel
     Write-Header "Step 6/6: Deploying Configuration and Restarting Weasel"
     
-    Write-Info "Deploying Rime configuration (this may take 10-30 seconds)..."
+    Write-Info "Deploying Rime configuration..."
     try {
         & $DeployerPath /deploy
         Write-Success "Configuration deployed successfully"
@@ -300,19 +298,10 @@ function Install-ReformedKeyboard {
     Write-Success "Reformed Chinese Keyboard is now installed!"
     Write-Host ""
     Write-Info "Next steps:"
-    Write-Host "  1. Press Ctrl+Shift or Ctrl+Space to activate input method"
-    Write-Host "  2. Start typing in Pinyin (e.g., 'weishenme')"
-    Write-Host "  3. You should see Reformed characters (為什庅 not 為什麼 nor 为什么)"
-    Write-Host ""
-    
-
-    
-    Write-Info "File locations:"
-    Write-Host "  - Schema files: $RimeDir"
-    Write-Host "  - Lua filters: $LuaDir"
-    Write-Host ""
-    
-    Write-Info "For troubleshooting, see WINDOWS_SETUP.md"
+    Write-Host "  1. Select Weasel keyboard by ⊞ Windows key+Spacebar"
+    Write-Host "     or from bottom right corner of your Windows taskbar"
+    Write-Host "  2. Type some 拼音 Pinyin (e.g. 'zenmeyang')"
+    Write-Host "  3. You should see Reformed Chinese characters (怎庅样 not 怎麼樣 nor 怎么样)"
     Write-Host ""
     
     Write-Host "Press any key to exit..."
@@ -325,7 +314,7 @@ try {
 } catch {
     Write-Error "Installation failed: $_"
     Write-Host ""
-    Write-Info "Please check WINDOWS_SETUP.md for manual installation instructions"
+    Write-Info "Please review instructions in reformed-chinese-keyboard/windows/README.md"
     Write-Host ""
     Write-Host "Press any key to exit..."
     $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")

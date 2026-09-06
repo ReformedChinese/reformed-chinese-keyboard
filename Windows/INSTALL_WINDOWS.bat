@@ -1,11 +1,12 @@
 @echo off
-REM Reformed Chinese Keyboard - Windows Installer
+chcp 65001 >nul
+REM Reformed Chinese Keyboard for Windows Installer
 REM Double-click this file to install on Windows
 
 echo.
-echo ===================================================
-echo   Reformed Chinese Keyboard - Windows Installer
-echo ===================================================
+echo ==================================================================
+echo   改革字拼音輸入法 Reformed Chinese Keyboard for Windows Installer
+echo ==================================================================
 echo.
 
 REM Run PowerShell installer with execution policy bypass

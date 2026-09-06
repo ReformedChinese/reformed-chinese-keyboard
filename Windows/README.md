@@ -1,79 +1,75 @@
-# Reformed Chinese Keyboard - Windows Installation Guide
+# Reformed Chinese Keyboard for Windows Installation Guide
 
 ### Step 1: Install Weasel
 
-下載 Download the latest compatible version of 小狼毫 Weasel under Windows section:
+Access https://rime.im/download/. Under **Windows** section, `下載` download the latest compatible version of 小狼毫 Weasel
 
-- https://rime.im/download/
+![Download Weasel](../media/weasel/weasel1.png)
 
-Open the downloaded Weasel installer .exe file and complete installation
+Open the downloaded Weasel installer .exe file e.g. weasel-0.17.0.0-installer.exe. Click `I Agree` → `Install`
+
+![Weasel License Agreement](../media/weasel/weasel2.png)
+
+![Install Weasel](../media/weasel/weasel3.png)
+
+Under Schemas, ensure you have `改革字 Reformed Chinese` checkmarked. Click `OK`
+
+![Schemas](../media/weasel/weasel4.png)
+
+Choose a Weasel theme (I recommend `碧水／Aqua`) and click `OK`. Select whether you want automatic Weasel update checks, then click `Finish` to complete Weasel installation
+
+![Themes](../media/weasel/weasel5.png)
 
 ### Step 2: Download this GitHub repo
 
-From [reformed-chinese-keyboard](https://github.com/ReformedChinese/reformed-chinese-keyboard) GitHub repo, click the green `Code` button. Under `Local` click `Download ZIP`
+On this GitHub repo [reformed-chinese-keyboard](https://github.com/ReformedChinese/reformed-chinese-keyboard), click the green `Code` button and then click `Download ZIP`
 
-Extract .zip file. If you lack software to extract, I suggest [7-Zip](https://www.7-zip.org/download.html)
+![Download ZIP](../media/weasel/weasel6.png)
+
+Extract the downloaded `reformed-chinese-keyboard-main.zip` file. If your version of Windows cannot extract and you need software, I suggest [7-Zip](https://www.7-zip.org/download.html)
+
+![Extract ZIP](../media/weasel/weasel7.png)
 
 ### Step 3: Install Reformed Chinese keyboard
 
-In your extracted reformed-chinese-keyboard folder, go to `Windows` subfolder and double-click `INSTALL_WINDOWS.bat` which installs Reformed Chinese keyboard for you
+Inside your extracted `reformed-chinese-keyboard-main` folder, go into `windows` subfolder and double-click `INSTALL_WINDOWS.bat` which installs Reformed Chinese keyboard for you
 
-Now you can type 拼音 pinyin to output Reformed Chinese characters 🥳
+![INSTALL_WINDOWS.bat](../media/weasel/weasel8.png)
 
+In the security pop-up, click `Run` to install Reformed Chinese keyboard
+
+![Security pop-up](../media/weasel/weasel9.png)
+
+If successful, you will see below screenshot once the installation completes
+
+![Install complete](../media/weasel/weasel10.png)
+
+Select Weasel keyboard by `⊞ Windows key`**+**`Spacebar` or from bottom right corner of your Windows taskbar (Ignore `Traditional, Taiwan` as that is misleading, the keyboard is indeed Reformed Chinese not Traditional Chinese)
+
+![Select Weasel keyboard](../media/weasel/weasel11.png)
+
+Type some 拼音 Pinyin to verify you can output Reformed Chinese characters e.g. "zenmeyang" for 怎庅样, "babaofan" for 八宝飯, "wangqiuchang" for 罔球場. Enter the number on left of characters to output. If needed, press `-` or `=` keys to page through candidate characters
+
+![Input](../media/weasel/weasel12.png)
+
+![Output](../media/weasel/weasel13.png)
+
+If you're able to output Reformed Chinese characters such as in screenshot above, CONGRATULATIONS! You have verified you can type Reformed Chinese characters, here's a [list of other Reformed characters](https://docs.google.com/spreadsheets/d/1lK39EUCqPZukM4NCPzidQg1L0zzKc6zavR6WR9Z6XZQ/) you can try typing 🥳 Woo!
 
 ## Toggling Lookalike Characters
 
 Reformed Chinese keyboard can optionally output similar-looking characters or variants to substitute some Reformed characters that lack Unicode support and thus wouldn't display e.g. 亀 for [⿱⺈⿻口电](https://glyphwiki.org/glyph/u2ffb-u20ba5-u7535.svg) (Traditional: 龜)、誏 for [⿰訁上]( https://glyphwiki.org/glyph/u33069-uk.svg) (Traditional: 讓)
 
 To toggle lookalike features:
-1. In Reformed Chinese keyboard, press **Ctrl** + **`**
+1. With Reformed Chinese keyboard selected, press `Ctrl`**+**`` ` `` to see lookalike options. Left-side shows what is currently enabled or disabled, press the corresponding number (`2` or `3`) to toggle select feature
+
+![Toggleable](../media/weasel/weasel14.png)
+
 2. Enable or Disable:
-   - **Lookalikes** (Default ON): If OFF, outputs corresponding Traditional characters instead. In cases where I couldn't find a suitable lookalike, will output Traditional regardless
-   - **Indicate Lookalikes** (Default OFF): Shows ᴸ marker after lookalikes, requires Lookalikes ON to function
+   - **Lookalikes** (Default `ON`): If `OFF`, outputs corresponding Traditional characters instead. In cases where I couldn't find a suitable lookalike, will output Traditional regardless
 
-**For Weasel (小狼毫) - Windows Rime implementation**
+      ![Lookalikes](../media/weasel/weasel15.png)
 
-## Quick Installation (Automatic)
+   - **Indicate Lookalikes** (Default `OFF`): Shows `ᴸ` marker after lookalikes. **Requires** `Lookalikes ON` to function
 
-**Download the entire `Windows` folder, then double-click `INSTALL_WINDOWS.bat`** - it does everything automatically
-
-> ⚠️ You must have the **entire `Windows` folder** (not just `INSTALL_WINDOWS.bat`) — the installer copies Reformed Chinese files from that folder to Rime.
-
-The installer will:
-- ✅ Check if Weasel is installed (guide you to install if needed). Once directed, click 下載 of the latest Weasel (小狼毫) version. Click the downloaded installer.exe.
-- ✅ Copy all Reformed Chinese files to the correct locations
-- ✅ Deploy Lua filters with proper UTF-8 encoding
-- ✅ Set Reformed Chinese as your default input method
-- ✅ Redeploy Weasel automatically
-
-**Installation takes 5-10 minutes.**
-
-## Step-by-Step
-
-1. **Download this repository** (as ZIP or clone with Git) — you need the entire `Windows` folder, not just the `.bat` file
-2. **Navigate to the `Windows` folder**
-3. **Double-click `INSTALL_WINDOWS.bat`**
-4. **Follow the prompts**:
-   - If Weasel is not installed, the installer will open the download page
-   - Install Weasel, then run `INSTALL_WINDOWS.bat` again
-5. **Start typing!**
-   - Press **Ctrl+Shift** or **Ctrl+Space** to activate
-   - Type pinyin to get Reformed Chinese characters
-
-## Quick Start Guide
-
-- **Activate keyboard**: Press **Ctrl+Shift** or **Ctrl+Space**
-- **Switch mode**: Press **Shift** to toggle Chinese ⇄ English
-- **View candidates**: Use number keys (1-9) to select characters
-- **Page through options**: Use **-** and **=** keys
-- **Settings**: Right-click the Weasel tray icon (中)
-
-## Toggling Lookalike Characters
-
-Reformed Chinese includes optional lookalike characters for traditional characters without proper Reformed Unicode support.
-
-To toggle lookalike features:
-1. While typing, press **F4** or **Ctrl+`** to open the menu
-2. Find switches:
-   - **Use Lookalikes** (使用形似字) - Toggle lookalike substitution (Default: ON)
-   - **Indicate Lookalikes** (標示形似字) - Show ᴸ marker after lookalikes (Default: OFF)
+      ![Indicate Lookalikes](../media/weasel/weasel16.png)

@@ -108,7 +108,7 @@ function Install-ReformedKeyboard {
         }
         
         Write-Host ""
-        Write-Host "Installation paused - Weasel needs to be installed first." -ForegroundColor Yellow
+        Write-Host "Installation paused, Weasel needs to be installed first." -ForegroundColor Yellow
         Write-Host ""
         Write-Info "Next steps:"
         Write-Host "  1. Download and install Weasel from the browser"

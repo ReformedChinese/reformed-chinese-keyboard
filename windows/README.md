@@ -70,6 +70,6 @@ To toggle lookalike features:
 
       ![Lookalikes](../media/weasel/weasel15.png)
 
-   - **Indicate Lookalikes** (Default `OFF`): Shows `ᴸ` marker after lookalikes. **Requires** `Lookalikes ON` to function
+   - **Indicate Lookalikes** (Default `OFF`): Shows `ᴸ` marker after each lookalike. **Requires** `Lookalikes ON` to function
 
       ![Indicate Lookalikes](../media/weasel/weasel16.png)

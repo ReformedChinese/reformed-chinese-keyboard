@@ -48,7 +48,7 @@ Select Weasel keyboard by `⊞ Windows key`**+**`Spacebar` or from bottom right 
 
 ![Select Weasel keyboard](../media/weasel/weasel11.png)
 
-Type some 拼音 Pinyin to verify you can output Reformed Chinese characters e.g. "zenmeyang" for 怎庅样, "babaofan" for 八宝飯, "wangqiuchang" for 罔球場. Enter the number on left of characters to output. If needed, press `-` or `=` keys to page through candidate characters
+Type some 拼音 Pinyin to verify you can output Reformed Chinese characters e.g. "zenmeyang" for 怎庅样, "babaofan" for 八宝飯, "wangqiuchang" for 罔球場. Enter the number on left of characters to output. If needed, press `-` or `=` keys to shortcut page through candidate characters
 
 ![Input](../media/weasel/weasel12.png)
 

@@ -2,11 +2,15 @@
 
 ### Step 1: Download this GitHub repo
 
-From [reformed-chinese-keyboard](https://github.com/ReformedChinese/reformed-chinese-keyboard) GitHub repo, click the green `Code` button. Under `Local` click `Download ZIP` and then extract the .zip file
+On this GitHub repo [reformed-chinese-keyboard](https://github.com/ReformedChinese/reformed-chinese-keyboard), click the green `Code` button and then click `Download ZIP`
+
+![Download ZIP](../media/weasel/weasel6.png)
+
+Double-click the downloaded `reformed-chinese-keyboard-main.zip` file to extract it
 
 ### Step 2: Run installation
 
-In your extracted reformed-chinese-keyboard folder, go to `macOS` subfolder and double-click `ReformedKeyboardMacSetup.command` which will open a Terminal to install Reformed Chinese keyboard for you (specifically Homebrew and 鼠鬚管 Squirrel). Follow the prompts shown in Terminal
+In your extracted `reformed-chinese-keyboard-main` folder, go into `macOS` subfolder and double-click `ReformedKeyboardMacSetup.command` which will open a Terminal to install Reformed Chinese keyboard for you (specifically Homebrew and 鼠鬚管 Squirrel). Follow the prompts shown in Terminal
 
 ### Step 3: Add Squirrel to Input Sources
 

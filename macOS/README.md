@@ -1,4 +1,4 @@
-# Reformed Chinese Keyboard - macOS Installation Guide
+# Reformed Chinese Keyboard for macOS Installation Guide
 
 ### Step 1: Download this GitHub repo
 
@@ -10,7 +10,21 @@ Double-click the downloaded `reformed-chinese-keyboard-main.zip` file to extract
 
 ### Step 2: Run installation
 
-Inside your extracted `reformed-chinese-keyboard-main` folder, go into `macOS` subfolder and double-click `ReformedKeyboardMacSetup.command` which will open a Terminal to install Reformed Chinese keyboard (specifically Homebrew and 鼠鬚管 Squirrel) for you. Follow the prompts shown in Terminal
+Inside your extracted `reformed-chinese-keyboard-main` folder, go into `macOS` subfolder. **Right-click** `ReformedKeyboardMacSetup.command` and click `Open` which will  install Reformed Chinese keyboard (Homebrew and 鼠鬚管 Squirrel) for you
+
+![ReformedKeyboardMacSetup.command](../media/squirrel/squirrel1.png)
+
+If you see a security pop-up asking `Are you sure you want to open it?`, click `Open`
+
+![ReformedKeyboardMacSetup.command](../media/squirrel/squirrel2.png)
+
+Follow the prompts shown in the opened Terminal window. Specifically, enter your `sudo` password (same password you use to log in to your Mac user account) and press `Return` or `Enter` key when prompted
+
+![ReformedKeyboardMacSetup.command](../media/squirrel/squirrel3.png)
+
+![ReformedKeyboardMacSetup.command](../media/squirrel/squirrel4.png)
+
+![ReformedKeyboardMacSetup.command](../media/squirrel/squirrel5.png)
 
 ### Step 3: Add Squirrel to Input Sources
 

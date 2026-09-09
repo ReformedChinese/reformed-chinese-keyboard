@@ -112,7 +112,7 @@ function Install-ReformedKeyboard {
         Write-Host ""
         Write-Info "Next steps:"
         Write-Host "  1. Download and install Weasel from the browser"
-        Write-Host "  2. Run this installer again: .\INSTALL_WINDOWS.bat"
+        Write-Host "  2. Run this installer again: .\ReformedKeyboardWindowsSetup.bat"
         Write-Host ""
         Write-Host "Press any key to exit..."
         $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")

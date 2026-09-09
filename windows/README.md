@@ -32,9 +32,9 @@ Extract the downloaded `reformed-chinese-keyboard-main.zip` file. If your versio
 
 ### Step 3: Install Reformed Chinese keyboard
 
-Inside your extracted `reformed-chinese-keyboard-main` folder, go into `windows` subfolder and double-click `INSTALL_WINDOWS.bat` which installs Reformed Chinese keyboard for you
+Inside your extracted `reformed-chinese-keyboard-main` folder, go into `windows` subfolder and double-click `ReformedKeyboardWindowsSetup.bat` which installs Reformed Chinese keyboard for you
 
-![INSTALL_WINDOWS.bat](../media/weasel/weasel8.png)
+![ReformedKeyboardWindowsSetup.bat](../media/weasel/weasel8.png)
 
 In the security pop-up, click `Run` to install Reformed Chinese keyboard
 

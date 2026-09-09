@@ -10,6 +10,6 @@ echo ==================================================================
 echo.
 
 REM Run PowerShell installer with execution policy bypass
-PowerShell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0install_windows.ps1"
+PowerShell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0ReformedKeyboardWindowsSetup.ps1"
 
 REM PowerShell script handles all messaging and user interaction

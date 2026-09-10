@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# Reformed Chinese Input Method - macOS Installation Script
+# Reformed Chinese Input Method for macOS Installation Script
 # This script installs the Reformed Chinese input method for Squirrel (鼠鬚管)
 
 set -e  # Exit on error
 
 echo "=========================================="
-echo "Reformed Chinese - macOS Installation"
+echo "Reformed Chinese Keyboard for macOS Installation"
 echo "=========================================="
 echo ""
 
@@ -231,7 +231,7 @@ echo ""
 echo "⚠️  IMPORTANT: Final steps required"
 echo ""
 if [ "$NEEDS_LOGOUT" = true ]; then
-    echo "Step 1: Add Squirrel to Input Sources (one-time manual step)"
+    echo "Step 1: Add Squirrel to Input Sources"
     echo "   1. Open System Settings → Keyboard → Input Sources"
     echo "   2. Click the '+' button"
     echo "   3. Search for 'Squirrel' and add. Either 'Squirrel - Traditional' or 'Squirrel - Simplified' is fine"

@@ -40,11 +40,11 @@ In the security pop-up, click `Run` to install Reformed Chinese keyboard
 
 ![Security pop-up](../media/weasel/weasel9.png)
 
-If successful, you will see below screenshot once the installation completes
+You should see below screenshot once the installation completes
 
 ![Install complete](../media/weasel/weasel10.png)
 
-Select Weasel keyboard by `⊞ Windows key`**+**`Spacebar` or from bottom right corner of your Windows taskbar (Ignore `Traditional, Taiwan` as that is misleading, the keyboard is indeed Reformed Chinese not Traditional Chinese)
+Select Weasel keyboard by `⊞ Windows key`**+**`Spacebar` or from bottom-right corner of your Windows taskbar (Ignore `Traditional, Taiwan` as that is misleading, the keyboard is indeed Reformed Chinese not Traditional Chinese)
 
 ![Select Weasel keyboard](../media/weasel/weasel11.png)
 

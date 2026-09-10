@@ -14,23 +14,41 @@ Inside your extracted `reformed-chinese-keyboard-main` folder, go into `macOS` s
 
 ![ReformedKeyboardMacSetup.command](../media/squirrel/squirrel1.png)
 
-If you see a security pop-up asking `Are you sure you want to open it?`, click `Open`
+In the security pop-up, click `Open`
 
-![ReformedKeyboardMacSetup.command](../media/squirrel/squirrel2.png)
+![Security pop-up](../media/squirrel/squirrel2.png)
 
-Follow the prompts shown in the opened Terminal window. Specifically, enter your `sudo` password (same password you use to log in to your Mac user account) and press `Return` or `Enter` key when prompted
+Follow the prompts shown in the opened Terminal window. Specifically, enter the password you log in to your Mac with and press `Return` or `Enter` key when prompted
 
-![ReformedKeyboardMacSetup.command](../media/squirrel/squirrel3.png)
+![Install Hombebrew](../media/squirrel/squirrel3.png)
 
-![ReformedKeyboardMacSetup.command](../media/squirrel/squirrel4.png)
+![Press RETURN/ENTER](../media/squirrel/squirrel4.png)
 
-![ReformedKeyboardMacSetup.command](../media/squirrel/squirrel5.png)
+![Install Squirrel](../media/squirrel/squirrel5.png)
+
+You should see below screenshot in Terminal window once the installation completes
+
+![Install Squirrel](../media/squirrel/squirrel6.png)
 
 ### Step 3: Add Squirrel to Input Sources
 
-When the Terminal program finishes running, open **System Settings** and go to **Keyboard → Input Sources**. Click the **`+`** button
+Click the Apple icon () in top-left corner of your screen and access `System Settings...`
 
-Search and add **Squirrel** (either `Squirrel - Simplified` or `Squirrel - Traditional` works, there's no difference to Reformed Chinese keyboard)
+![System Settings](../media/squirrel/squirrel7.png)
+
+Go to `Keyboard` and next to `Input Sources`, click `Edit`
+
+![Keyboard](../media/squirrel/squirrel8.png)
+
+Click the `+` button
+
+![+ button](../media/squirrel/squirrel9.png)
+
+Search "Squirrel", you will see `Squirrel - Simplified` and `Squirrel - Traditional`. Select either one (`Simplified` and `Traditional` are misleading as keyboard is actually Reformed Chinese) and click `Add`  → `Done`
+
+![Search "Squirrel"](../media/squirrel/squirrel10.png)
+
+![Search "Squirrel"](../media/squirrel/squirrel11.png)
 
 ### Step 4: Log out and log in
 

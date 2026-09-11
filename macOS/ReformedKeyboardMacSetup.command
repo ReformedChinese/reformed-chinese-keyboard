@@ -40,7 +40,17 @@ if [ "$SQUIRREL_INSTALLED" = false ]; then
         echo ""
         echo "Installing Homebrew first..."
         /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-        
+
+        # A freshly installed Homebrew isn't on PATH in this shell yet (Apple Silicon
+        # installs to /opt/homebrew, Intel to /usr/local) — pick it up before rechecking.
+        if ! command -v brew &> /dev/null; then
+            if [ -x /opt/homebrew/bin/brew ]; then
+                eval "$(/opt/homebrew/bin/brew shellenv)"
+            elif [ -x /usr/local/bin/brew ]; then
+                eval "$(/usr/local/bin/brew shellenv)"
+            fi
+        fi
+
         if ! command -v brew &> /dev/null; then
             echo "❌ Failed to install Homebrew"
             echo ""
@@ -73,8 +83,8 @@ if [ "$SQUIRREL_INSTALLED" = false ]; then
 
     if [ -d "$SQUIRREL_IM_PATH" ] || [ -d "$SQUIRREL_IM_PATH_USER" ]; then
         echo "✅ Squirrel installation detected"
-        echo "   - $SQUIRREL_IM_PATH"
-        echo "   - $SQUIRREL_IM_PATH_USER"
+        [ -d "$SQUIRREL_IM_PATH" ] && echo "   - $SQUIRREL_IM_PATH"
+        [ -d "$SQUIRREL_IM_PATH_USER" ] && echo "   - $SQUIRREL_IM_PATH_USER"
         NEEDS_LOGOUT=true
     else
         echo "❌ Squirrel installation did not complete"
@@ -180,24 +190,23 @@ fi
 echo "✅ default.custom.yaml includes reformed schema"
 echo ""
 
-echo "=========================================="
-echo "Installation Complete"
-echo "=========================================="
-echo ""
-
-# Automatically deploy Squirrel
-echo "Deploying Squirrel..."
+# Deploy: (re)launching Squirrel recompiles the schemas into the build dir.
+# Note: "open -a Squirrel" often fails since Launch Services doesn't reliably
+# resolve apps installed under /Library/Input Methods by name, so open by path.
+echo "Deploying configuration to Squirrel..."
 rm -rf "$HOME/Library/Rime/build" 2>/dev/null
 killall Squirrel 2>/dev/null || true
 sleep 1
-open -a "Squirrel" 2>/dev/null || true
+if [ -d "$SQUIRREL_IM_PATH_USER" ]; then
+    open "$SQUIRREL_IM_PATH_USER" 2>/dev/null || true
+elif [ -d "$SQUIRREL_IM_PATH" ]; then
+    open "$SQUIRREL_IM_PATH" 2>/dev/null || true
+fi
 sleep 2
-
-echo "✅ Squirrel has been deployed"
 echo ""
 
 # Confirm the reformed schema is loaded into the build output
-echo "Verifying Reformed schema is loaded..."
+echo "Verifying deployment..."
 BUILD_DIR="$HOME/Library/Rime/build"
 RETRIES=5
 FOUND_REFORMED=false
@@ -210,14 +219,13 @@ for i in $(seq 1 "$RETRIES"); do
 done
 
 if [ "$FOUND_REFORMED" = true ]; then
-    echo "✅ Reformed schema detected in build output"
+    echo "✅ Deployment verified"
 else
     if [ "$NEEDS_LOGOUT" = true ]; then
-        echo "✅ Installation successful"
-        echo "   Squirrel has been added to your Input Sources."
-        echo "   Log out and log back in to activate Squirrel."
+        echo "⚠️  Deployment not yet confirmed (expected until Squirrel is added to Input Sources)"
+        echo "   Files are installed correctly; follow the steps below to finish setup."
     else
-        echo "❌ Reformed schema not detected in build output"
+        echo "❌ Deployment could not be confirmed"
         echo "Troubleshooting:"
         echo "- Ensure Squirrel is enabled in Input Sources"
         echo "- Log out and log back in, then run this script again"
@@ -226,9 +234,13 @@ else
     fi
 fi
 echo ""
-echo "✅ Installation Complete"
+echo "=========================================="
+echo "Installation Complete"
+echo "=========================================="
 echo ""
-echo "⚠️  IMPORTANT: Final steps required"
+echo "✅ Reformed Chinese Keyboard is now installed!"
+echo ""
+echo "⚠️  IMPORTANT: Final steps below required"
 echo ""
 if [ "$NEEDS_LOGOUT" = true ]; then
     echo "Step 1: Add Squirrel to Input Sources"

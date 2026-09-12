@@ -28,7 +28,7 @@ Follow the prompts shown in the opened Terminal window. Specifically, enter the 
 
 You should see below screenshot in Terminal window once the installation completes
 
-![Install Squirrel](../media/squirrel/squirrel6.png)
+![Installation Complete](../media/squirrel/squirrel6.png)
 
 ### Step 3: Add Squirrel to Input Sources
 

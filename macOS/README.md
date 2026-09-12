@@ -62,7 +62,7 @@ Click the Input menu in top-right corner of your screen. Select `Squirrel`
 
 ![Select Squirrel](../media/squirrel/squirrel13.png)
 
-Type some 拼音 Pinyin to verify you can output Reformed Chinese characters e.g. "jidianzhong" for 几点鈡, "zhunbeihao" for 準俻好, "guandimiao" for 関帝庿. Enter the number on left of characters to output. If needed, press - or = keys to shortcut page through candidate characters
+Type some 拼音 Pinyin to verify you can output Reformed Chinese characters e.g. "jidianzhong" for 几点鈡, "zhunbeihao" for 準俻好, "guandimiao" for 関帝庿. Enter the number on left of characters to output. If needed, press `-` or `=` keys to shortcut page through candidate characters
 
 ![Input](../media/squirrel/squirrel14.png)
 

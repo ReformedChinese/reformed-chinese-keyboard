@@ -48,70 +48,42 @@ Search "Squirrel", you will see `Squirrel - Simplified` and `Squirrel - Traditio
 
 ![Search "Squirrel"](../media/squirrel/squirrel10.png)
 
-![Search "Squirrel"](../media/squirrel/squirrel11.png)
+![Done](../media/squirrel/squirrel11.png)
 
 ### Step 4: Log out and log in
 
-You must log out of your Mac and then log back in
+Log out of your Mac and then log back in
 
-Select Squirrel from your input sources in menu bar
+![Log out](../media/squirrel/squirrel12.png)
 
-Now you can type 拼音 pinyin to output Reformed Chinese characters 🥳
+### Step 5: Verify Squirrel
+
+Click the Input menu in top-right corner of your screen. Select `Squirrel`
+
+![Select Squirrel](../media/squirrel/squirrel13.png)
+
+Type some 拼音 Pinyin to verify you can output Reformed Chinese characters e.g. "jidianzhong" for 几点鈡, "zhunbeihao" for 準俻好, "guandimiao" for 関帝庿. Enter the number on left of characters to output. If needed, press - or = keys to shortcut page through candidate characters
+
+![Input](../media/squirrel/squirrel14.png)
+
+![Output](../media/squirrel/squirrel15.png)
+
+If you're able to output Reformed Chinese characters such as in screenshot above, CONGRATULATIONS! You have verified you can type Reformed Chinese characters, here's a [list of other Reformed characters](https://docs.google.com/spreadsheets/d/1lK39EUCqPZukM4NCPzidQg1L0zzKc6zavR6WR9Z6XZQ/) you can try typing 🥳 Woo!
 
 ## Toggling Lookalike Characters
 
-Reformed Chinese keyboard can optionally output similar-looking characters or variants to substitute some Reformed characters that lack Unicode support and thus wouldn't display e.g. 亀 for [⿱⺈⿻口电](https://glyphwiki.org/glyph/u2ffb-u20ba5-u7535.svg) (Traditional: 龜)、誏 for [⿰訁上]( https://glyphwiki.org/glyph/u33069-uk.svg) (Traditional: 讓)
+Reformed Chinese keyboard can optionally output similar-looking characters or variants to substitute some Reformed characters that lack Unicode support and thus wouldn't display e.g. 亀 for [⿱⺈⿻口电](https://glyphwiki.org/glyph/u2ffb-u20ba5-u7535.svg) (Traditional: 龜)、誏 for [⿰訁上]( https://glyphwiki.org/glyph/u33069-uk.svg) (Traditional: 讓)、㒷 for [⿱丿㒷]( https://glyphwiki.org/glyph/u2a94c-var-002.svg) (Traditional: 興)
 
 To toggle lookalike features:
-1. In Reformed Chinese keyboard, press **Control** + **`**
+1. With Squirrel selected, press `Control`**+**`` ` `` to see lookalike options. Left-side shows what is currently enabled or disabled, press the corresponding number (`2` or `3`) to toggle a feature
+
+![Toggleable](../media/squirrel/squirrel16.png)
+
 2. Enable or Disable:
-   - **Lookalikes** (Default ON): If OFF, outputs corresponding Traditional characters instead. In cases where I couldn't find a suitable lookalike, will output Traditional regardless
-   - **Indicate Lookalikes** (Default OFF): Shows ᴸ marker after lookalikes, requires Lookalikes ON to function
+   - **Lookalikes** (Default `ON`): If `OFF`, outputs corresponding Traditional characters instead. In cases where I couldn't find a suitable lookalike, will output Traditional regardless
 
-**For Squirrel (鼠鬚管) - macOS Rime implementation**
+      ![Lookalikes](../media/squirrel/squirrel17.png)
 
-## Quick Installation (Automatic)
+   - **Indicate Lookalikes** (Default `OFF`): Shows `ᴸ` marker after each lookalike. **Requires** `Lookalikes ON` to function
 
-**Just double-click `ReformedKeyboardMacSetup.command`**, it does everything automatically!
-
-The installer will:
-- ✅ Install Squirrel (via Homebrew) if not present
-- ✅ Copy all Reformed Chinese files to the correct locations
-- ✅ Set Reformed Chinese as your default input method
-- ✅ Redeploy Squirrel automatically
-
-**Installation takes 2-3 minutes.**
-
-> **Note:** After a fresh Squirrel install you must manually add it to Input Sources once (see Step 4 below), then log out and back in for it to appear in the menu bar.
-
-## Step-by-Step
-
-1. **Download this repository** (as ZIP or clone with Git)
-2. **Navigate to the `macOS` folder**
-3. **Double-click `ReformedKeyboardMacSetup.command`**
-4. **Add Squirrel to Input Sources** (required once after a fresh Squirrel install):
-   1. Open **System Settings → Keyboard → Input Sources**
-   2. Click the **`+`** button
-   3. Search for **Squirrel** and add **Squirrel - Traditional** (or Simplified, either works)
-   4. **Log out of macOS and log back in**.  Squirrel will now appear in the menu bar
-5. **Start typing!**
-   - Select Squirrel from your input sources (menu bar)
-   - Press **Shift** to toggle between English/Chinese
-   - Type pinyin to get Reformed Chinese characters
-
-## Quick Start Guide
-
-- **Switch mode**: Press **Shift** to toggle Chinese ⇄ English
-- **Access menu**: Press **Control+`** for more options
-- **View candidates**: Use number keys (1-9) to select characters
-- **Page through options**: Use **-** and **=** keys
-
-## Toggling Lookalike Characters
-
-Reformed Chinese includes optional lookalike characters for traditional characters without proper Reformed Unicode support.
-
-To toggle lookalike features:
-1. While typing, press **Control+`** to open the menu
-2. Find switches:
-   - **Use Lookalikes** (使用形似字) - Toggle lookalike substitution (Default: ON)
-   - **Indicate Lookalikes** (標示形似字) - Show ᴸ marker after lookalikes (Default: OFF)
+      ![Indicate Lookalikes](../media/squirrel/squirrel18.png)

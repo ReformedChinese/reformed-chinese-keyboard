@@ -44,9 +44,9 @@ You should see below screenshot once the installation completes
 
 ![Install complete](../media/weasel/weasel10.png)
 
-Select Weasel keyboard by `⊞ Windows key`**+**`Spacebar` or from bottom-right corner of your Windows taskbar (Ignore `Traditional, Taiwan` as that is misleading, the keyboard is indeed Reformed Chinese not Traditional Chinese)
+Select Weasel by `⊞ Windows key`**+**`Spacebar` or from bottom-right corner of your Windows taskbar (Ignore `Traditional, Taiwan` as that is misleading, the keyboard is indeed Reformed Chinese not Traditional Chinese)
 
-![Select Weasel keyboard](../media/weasel/weasel11.png)
+![Select Weasel](../media/weasel/weasel11.png)
 
 Type some 拼音 Pinyin to verify you can output Reformed Chinese characters e.g. "zenmeyang" for 怎庅样, "babaofan" for 八宝飯, "wangqiuchang" for 罔球場. Enter the number on left of characters to output. If needed, press `-` or `=` keys to shortcut page through candidate characters
 
@@ -58,10 +58,10 @@ If you're able to output Reformed Chinese characters such as in screenshot above
 
 ## Toggling Lookalike Characters
 
-Reformed Chinese keyboard can optionally output similar-looking characters or variants to substitute some Reformed characters that lack Unicode support and thus wouldn't display e.g. 亀 for [⿱⺈⿻口电](https://glyphwiki.org/glyph/u2ffb-u20ba5-u7535.svg) (Traditional: 龜)、誏 for [⿰訁上]( https://glyphwiki.org/glyph/u33069-uk.svg) (Traditional: 讓)
+Reformed Chinese keyboard can optionally output similar-looking characters or variants to substitute some Reformed characters that lack Unicode support and thus wouldn't display e.g. 亀 for [⿱⺈⿻口电](https://glyphwiki.org/glyph/u2ffb-u20ba5-u7535.svg) (Traditional: 龜)、誏 for [⿰訁上]( https://glyphwiki.org/glyph/u33069-uk.svg) (Traditional: 讓)、㒷 for [⿱丿㒷]( https://glyphwiki.org/glyph/u2a94c-var-002.svg) (Traditional: 興)
 
 To toggle lookalike features:
-1. With Reformed Chinese keyboard selected, press `Ctrl`**+**`` ` `` to see lookalike options. Left-side shows what is currently enabled or disabled, press the corresponding number (`2` or `3`) to toggle a feature
+1. With Weasel selected, press `Ctrl`**+**`` ` `` to see lookalike options. Left-side shows what is currently enabled or disabled, press the corresponding number (`2` or `3`) to toggle a feature
 
 ![Toggleable](../media/weasel/weasel14.png)
 

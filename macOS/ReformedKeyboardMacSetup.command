@@ -39,10 +39,21 @@ if [ "$SQUIRREL_INSTALLED" = false ]; then
         echo "⚠️  Homebrew is not installed"
         echo ""
         echo "Installing Homebrew first..."
-        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-        # A freshly installed Homebrew isn't on PATH in this shell yet (Apple Silicon
-        # installs to /opt/homebrew, Intel to /usr/local) — pick it up before rechecking.
+        # Homebrew's installer dropped Intel Mac support upstream on 2026-09-11
+        # (https://github.com/Homebrew/install/pull/1140), so on Intel we pin to
+        # the last commit before that removal to keep auto-install working.
+        HOMEBREW_INSTALL_REF="HEAD"
+        if [ "$(uname -m)" != "arm64" ]; then
+            HOMEBREW_INSTALL_REF="0f5b7666a65fc2d1a2615549f02771353c250f9a"
+        fi
+
+        # "|| true" prevents Homebrew's failure from tripping this script's "set -e"
+        # before we get a chance to show the manual-install fallback below.
+        /bin/bash -c "$(curl -fsSL "https://raw.githubusercontent.com/Homebrew/install/${HOMEBREW_INSTALL_REF}/install.sh")" || true
+
+        # A freshly installed Homebrew isn't on PATH in this shell yet, pick it up
+        # before rechecking (Apple Silicon uses /opt/homebrew, Intel uses /usr/local).
         if ! command -v brew &> /dev/null; then
             if [ -x /opt/homebrew/bin/brew ]; then
                 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -244,22 +255,28 @@ echo "⚠️  IMPORTANT: Final steps below required"
 echo ""
 if [ "$NEEDS_LOGOUT" = true ]; then
     echo "Step 1: Add Squirrel to Input Sources"
-    echo "   1. Open System Settings → Keyboard → Input Sources"
-    echo "   2. Click the '+' button"
-    echo "   3. Search for 'Squirrel' and add. Either 'Squirrel - Traditional' or 'Squirrel - Simplified' is fine"
+    echo "   a. In top-left corner of your screen, click  icon →"
+    echo "      System Settings → Keyboard → Edit (next to Input Sources)"
+    echo "   b. Click the '+' button"
+    echo "   c. Search 'Squirrel' and select either 'Squirrel - Traditional'"
+    echo "      or 'Squirrel - Simplified', there is no difference"
+    echo "   d. Click Add → Done"
     echo ""
-    echo "Step 2: Log out and log back in to macOS"
-    echo "   Squirrel will appear in the menu bar after logging back in."
+    echo "Step 2: Log out of your Mac and then log back in"
     echo ""
     echo "Step 3: Start using Reformed Chinese"
 else
     echo "Step 1: Enable Squirrel as an input source"
-    echo "   1. Open System Settings → Keyboard → Input Sources"
-    echo "   2. Click the '+' button"
-    echo "   3. Find and add 'Squirrel - Simplified' or 'Squirrel - Traditional' (either is fine)"
+    echo "   a. In top-left corner of your screen, click  icon →"
+    echo "      System Settings → Keyboard → Edit (next to Input Sources)"
+    echo "   b. Click the '+' button"
+    echo "   c. Search 'Squirrel' and select either 'Squirrel - Traditional'"
+    echo "      or 'Squirrel - Simplified', there is no difference"
+    echo "   d. Click Add → Done"
     echo ""
     echo "Step 2: Start using Reformed Chinese"
 fi
-echo "   1. Select 'Squirrel' from your input menu (menu bar)"
-echo "   2. Now you can type 拼音 pinyin to output Reformed Chinese characters 🥳"
-echo ""
+echo "   a. Click the Input menu in top-right corner of your screen"
+echo "   b. Select Squirrel"
+echo "   c. Type some 拼音 Pinyin (e.g. 'jidianzhong')"
+echo "   d. You should see Reformed Chinese characters (e.g. 几点鈡)"

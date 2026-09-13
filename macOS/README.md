@@ -26,7 +26,7 @@ Follow the prompts shown in the opened Terminal window. Specifically, enter the 
 
 ![Install Squirrel](../media/squirrel/squirrel5.png)
 
-You should see below screenshot in Terminal window once the installation completes
+You should see below screenshot in Terminal window once the installation completes (You may need to scroll up a bit)
 
 ![Installation Complete](../media/squirrel/squirrel6.png)
 

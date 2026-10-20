@@ -1,4 +1,14 @@
-# Reformed Chinese Keyboard — iOS Installation Guide
+# Reformed Chinese Keyboard for iOS Installation Guide
+
+### Step 1: Download this GitHub repo
+
+On this GitHub repo [reformed-chinese-keyboard](https://github.com/ReformedChinese/reformed-chinese-keyboard), tap the green `Code` button and then tap `Download ZIP`. A `File downloaded` pop-up (or similar pop-up depending on browser) will appear, tap `Open` or open from your Downloads
+
+![Download ZIP](../media/trime/trime1.png)
+
+Tap `Extract`
+
+![Extract ZIP](../media/trime/trime2.png)
 
 ### Step 1: Install 仓输入法 Hamster
 

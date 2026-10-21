@@ -2,27 +2,27 @@
 
 ### Step 1: Install Weasel
 
-Access https://rime.im/download/. Under **Windows** section, `下載` download the latest compatible version of 小狼毫 Weasel
+Access https://rime.im/download/. Under **Windows** section, click `下載` to download the latest compatible version of 小狼毫 Weasel
 
 ![Download Weasel](../media/weasel/weasel1.png)
 
-Open the downloaded Weasel installer .exe file e.g. weasel-0.17.0.0-installer.exe. Click `I Agree` → `Install`
+Open the downloaded Weasel installer .exe file e.g. *weasel-0.17.0.0-installer.exe*. Click **I Agree** → **Install**
 
 ![Weasel License Agreement](../media/weasel/weasel2.png)
 
 ![Install Weasel](../media/weasel/weasel3.png)
 
-Under Schemas, ensure you have `改革字 Reformed Chinese` checkmarked. Click `OK`
+Under **Schemas**, ensure you have `改革字 Reformed Chinese` checkmarked. Click **OK**
 
 ![Schemas](../media/weasel/weasel4.png)
 
-Choose a Weasel theme (I recommend `碧水／Aqua`) and click `OK`. Select whether you want automatic Weasel update checks, then click `Finish` to complete Weasel installation
+Choose a Weasel theme (I recommend `碧水／Aqua`) and click **OK**. Select whether you want automatic Weasel update checks, then click **Finish** to complete Weasel installation
 
 ![Themes](../media/weasel/weasel5.png)
 
 ### Step 2: Download this GitHub repo
 
-On this GitHub repo [reformed-chinese-keyboard](https://github.com/ReformedChinese/reformed-chinese-keyboard), click the green `Code` button and then click `Download ZIP`
+On this GitHub repo [reformed-chinese-keyboard](https://github.com/ReformedChinese/reformed-chinese-keyboard), click the green **Code** button and then click **Download ZIP**
 
 ![Download ZIP](../media/weasel/weasel6.png)
 
@@ -36,7 +36,7 @@ Inside your extracted `reformed-chinese-keyboard-main` folder, go into `windows`
 
 ![ReformedKeyboardWindowsSetup.bat](../media/weasel/weasel8.png)
 
-In the security pop-up, click `Run` to install Reformed Chinese keyboard
+In the security pop-up, click **Run** to install Reformed Chinese keyboard
 
 ![Security pop-up](../media/weasel/weasel9.png)
 
@@ -44,7 +44,7 @@ You should see below screenshot once the installation completes
 
 ![Install complete](../media/weasel/weasel10.png)
 
-Select Weasel by `⊞ Windows key`**+**`Spacebar` or from bottom-right corner of your Windows taskbar (Ignore `Traditional, Taiwan` as that is misleading, the keyboard is indeed Reformed Chinese not Traditional Chinese)
+Select Weasel by `⊞ Windows key`**+**`Spacebar` or from bottom-right corner of your Windows taskbar (Ignore "Traditional, Taiwan" as that is misleading, the keyboard is indeed Reformed Chinese not Traditional Chinese)
 
 ![Select Weasel](../media/weasel/weasel11.png)
 

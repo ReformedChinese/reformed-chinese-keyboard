@@ -2,7 +2,7 @@
 
 ### Step 1: Download this GitHub repo
 
-On this GitHub repo [reformed-chinese-keyboard](https://github.com/ReformedChinese/reformed-chinese-keyboard), click the green `Code` button and then click `Download ZIP`
+On this GitHub repo [reformed-chinese-keyboard](https://github.com/ReformedChinese/reformed-chinese-keyboard), click the green **Code** button and then click **Download ZIP**
 
 ![Download ZIP](../media/weasel/weasel6.png)
 
@@ -10,11 +10,11 @@ Double-click the downloaded `reformed-chinese-keyboard-main.zip` file to extract
 
 ### Step 2: Run installation
 
-Inside your extracted `reformed-chinese-keyboard-main` folder, go into `macOS` subfolder. **Right-click** `ReformedKeyboardMacSetup.command` and click `Open` which will  install Reformed Chinese keyboard (Homebrew and 鼠鬚管 Squirrel) for you
+Inside your extracted `reformed-chinese-keyboard-main` folder, go into `macOS` subfolder. **Right-click** `ReformedKeyboardMacSetup.command` and click **Open** which will install Reformed Chinese keyboard (Homebrew and 鼠鬪管 Squirrel) for you
 
 ![ReformedKeyboardMacSetup.command](../media/squirrel/squirrel1.png)
 
-In the security pop-up, click `Open`
+In the security pop-up, click **Open**
 
 ![Security pop-up](../media/squirrel/squirrel2.png)
 
@@ -32,19 +32,19 @@ You should see below screenshot in Terminal window once the installation complet
 
 ### Step 3: Add Squirrel to Input Sources
 
-Click the Apple icon () in top-left corner of your screen and access `System Settings...`
+Click the Apple icon () in top-left corner of your screen and access **System Settings...**
 
 ![System Settings](../media/squirrel/squirrel7.png)
 
-Go to `Keyboard` and next to `Input Sources`, click `Edit`
+Go to **Keyboard** and next to **Input Sources**, click **Edit**
 
 ![Keyboard](../media/squirrel/squirrel8.png)
 
-Click the `+` button
+Click the **+** button
 
 ![+ button](../media/squirrel/squirrel9.png)
 
-Search "Squirrel", you will see `Squirrel - Simplified` and `Squirrel - Traditional`. Select either one (`Simplified` and `Traditional` are misleading as keyboard is actually Reformed Chinese) and click `Add`  → `Done`
+Search "Squirrel", you will see **Squirrel - Simplified** and **Squirrel - Traditional**. Select either one ("Simplified" and "Traditional" are misleading as keyboard is actually Reformed Chinese) and click **Add**  → **Done**
 
 ![Search "Squirrel"](../media/squirrel/squirrel10.png)
 
@@ -58,7 +58,7 @@ Log out of your Mac and then log back in
 
 ### Step 5: Verify Squirrel
 
-Click the Input menu in top-right corner of your screen. Select `Squirrel`
+Click the Input menu in top-right corner of your screen. Select **Squirrel**
 
 ![Select Squirrel](../media/squirrel/squirrel13.png)
 

@@ -2,19 +2,41 @@
 
 ### Step 1: Download this GitHub repo
 
-On this GitHub repo [reformed-chinese-keyboard](https://github.com/ReformedChinese/reformed-chinese-keyboard), tap the green `Code` button and then tap `Download ZIP`. A `File downloaded` pop-up (or similar pop-up depending on browser) will appear, tap `Open` or open from your Downloads
+On this GitHub repo [reformed-chinese-keyboard](https://github.com/ReformedChinese/reformed-chinese-keyboard), tap the green **Code** button and then tap **Download ZIP**
 
-![Download ZIP](../media/trime/trime1.png)
+![Download ZIP](../media/hamster/hamster1.png)
 
-Tap `Extract`
+A pop-up asking to download `reformed-chinese-keyboard-main.zip` will appear, tap **Download**
 
-![Extract ZIP](../media/trime/trime2.png)
+![Download ZIP pop-up](../media/hamster/hamster2.png)
 
-### Step 1: Install 仓输入法 Hamster
+Next to Safari search field, tap the Downloads button
 
-Search 仓输入法 in the App Store and install
+![Downloads button](../media/hamster/hamster3.png)
 
-### Step 2: Download Files to Phone
+Tap **Downloads** in the pop-up
+
+![See Downloads](../media/hamster/hamster4.png)
+
+Tap `reformed-chinese-keyboard-main.zip` which will direct you to Downloads folder
+
+![See Downloads](../media/hamster/hamster5.png)
+
+Inside Downloads folder, tap `reformed-chinese-keyboard-main.zip` to automatically extract its contents into a folder
+
+![Extract ZIP](../media/hamster/hamster6.png)
+
+### Step 2: Install 仓输入法 Hamster
+
+Open iPhone App Store and search [仓输入法](https://apps.apple.com/app/%E4%BB%93%E8%BE%93%E5%85%A5%E6%B3%95/id6446617683). Tap **Get**
+
+![Get Hamster](../media/hamster/hamster7.png)
+
+Tap **Install**
+
+![Install Hamster](../media/hamster/hamster8.png)
+
+### Step 3: Download Files to Phone
 
 Download all files from GitHub repository's **`iOS/`** folder including **`iOS/lua/`** except README.MD. It's very likely that downloading will append .txt extension to the original files, which if that's the case, simply rename files to remove .txt extension. You will need to enable show file extensions in order to verify and rename
 
@@ -38,18 +60,18 @@ iOS/
 
 When moving `default.custom.yaml` into `On My iPhone/Hamster/Rime/`, select **Replace** when prompted
 
-### Step 4: Deploy and Enable
+### Step 5: Deploy and Enable
 
 - Open Hamster → RIME → **重新部署**
 
-### Step 5: Enable Keyboard
+### Step 6: Enable Keyboard
 
 iOS Settings → General → Keyboard → Keyboards → Add New Keyboard → **Hamster**
 
 Now you can hold 🌐 button on your keyboard to select Hamster and begin typing 拼音 pinyin to output Reformed Chinese characters 🥳
 
 
-### Step 5:
+### Step 7:
 
 
 > **Note:** Hamster availability varies by App Store region.

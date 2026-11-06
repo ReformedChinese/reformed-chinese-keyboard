@@ -4,87 +4,87 @@
 
 On this GitHub repo [reformed-chinese-keyboard](https://github.com/ReformedChinese/reformed-chinese-keyboard), tap the green **Code** button and then tap **Download ZIP**. A "File downloaded" pop-up (or similar pop-up depending on browser) will appear, tap **Open** or open from your Downloads
 
-![Download ZIP](../media/trime/trime1.png)
+![Download ZIP](../media/android/android1.png)
 
 Tap **Extract**
 
-![Extract ZIP](../media/trime/trime2.png)
+![Extract ZIP](../media/android/android2.png)
 
 ### Step 2: Install Trime
 
 Access https://f-droid.org/packages/com.osfans.trime/. Under the latest suggested version, tap **Download APK** and open
 
-![Download APK](../media/trime/trime3.png)
+![Download APK](../media/android/android3.png)
 
 You may see a pop-up warning "your phone currently isn't allowed to install unknown apps". If so, tap **Settings**. Enable **Allow permission** then in the new pop-up, tap **Install**
 
-![Settings](../media/trime/trime4.png)
+![Settings](../media/android/android4.png)
 
-![Allow permission](../media/trime/trime5.png)
+![Allow permission](../media/android/android5.png)
 
 In the new pop-up that appears once Trime app is installed, tap **Open**
 
-![App installed](../media/trime/trime6.png)
+![App installed](../media/android/android6.png)
 
 ### Step 3: Configure Trime
 
 Choose **Sync from external storage** and tap **SELECT EXTERNAL DATA DIRECTORY...**
 
-![Sync from external](../media/trime/trime7.png)
+![Sync from external](../media/android/android7.png)
 
 Navigate to `android` folder under your extracted `reformed-chinese-keyboard-main` (Step 1). Inside `android` folder, tap **USE THIS FOLDER**
 
-![USE THIS FOLDER](../media/trime/trime8.png)
+![USE THIS FOLDER](../media/android/android8.png)
 
 In the new pop-up "Allow Trime to access folder?", tap **ALLOW**. You will see "Data folder imported successfully", tap **NEXT**
 
-![Allow Trime](../media/trime/trime9.png)
+![Allow Trime](../media/android/android9.png)
 
-![Data folder imported](../media/trime/trime10.png)
+![Data folder imported](../media/android/android10.png)
 
 Tap **ENABLE INPUT METHOD** which will open **Keyboard** settings
 
-![Data folder imported](../media/trime/trime11.png)
+![Data folder imported](../media/android/android11.png)
 
 Enable both **Trime** and **Keyboard button on navigation bar** if the latter isn't already enabled
 
-![Enable Trime](../media/trime/trime12.png)
+![Enable Trime](../media/android/android12.png)
 
 In top-left of **Keyboard** settings, tap **<** to go back. Tap **Next**
 
-![Tap <](../media/trime/trime13.png)
+![Tap <](../media/android/android13.png)
 
-![NEXT](../media/trime/trime14.png)
+![NEXT](../media/android/android14.png)
 
 Decide whether you'd like to set Trime as your default input method. I recommend tapping **SKIP** which in the next pop-up tap **OK, THANKS** 
 
-![SKIP](../media/trime/trime15.png)
+![SKIP](../media/android/android15.png)
 
-![OK THANKS](../media/trime/trime16.png)
+![OK THANKS](../media/android/android16.png)
 
 In "No Notification Permission" pop-up, decide whether you'd like Trime notifications and choose either **CANCEL** or **GRANT PERMISSION**
 
-![Notifications](../media/trime/trime17.png)
+![Notifications](../media/android/android17.png)
 
 At the top, tap the circular arrow icon (**↺**) to deploy so you can finally type Reformed Chinese characters
  
-![Deploy](../media/trime/trime18.png)
+![Deploy](../media/android/android18.png)
 
 ### Step 4: Verify Trime
 
 On your Android keyboard, tap **⌨** icon located at bottom right or left corner
 
-![⌨ icon](../media/trime/trime19.png)
+![⌨ icon](../media/android/android19.png)
 
 In "Choose input method" pop-up, select **Trime**
 
-![Choose input method](../media/trime/trime20.png)
+![Choose input method](../media/android/android20.png)
 
 Type some 拼音 Pinyin to verify you can output Reformed Chinese characters e.g. "chacanting" for 茶湌庁, "guayulin" for 刮魚魿, "xuanyuanjian" for 軒䡇剣. Tap the correct candidate characters to output
 
-![Input](../media/trime/trime21.png)
+![Input](../media/android/android21.png)
 
-![Output](../media/trime/trime22.png)
+![Output](../media/android/android22.png)
 
 If you're able to output Reformed Chinese characters such as in screenshot above, CONGRATULATIONS! You have verified you can type Reformed Chinese characters, here's a [list of other Reformed characters](https://docs.google.com/spreadsheets/d/1lK39EUCqPZukM4NCPzidQg1L0zzKc6zavR6WR9Z6XZQ/) you can try typing 🥳 Woo!
 
@@ -96,17 +96,17 @@ To toggle lookalike features:
 
 1. With Trime input method selected, tap **⋯** at top-left of keyboard to see lookalike options
 
-![Tap ⋯](../media/trime/trime23.png)
+![Tap ⋯](../media/android/android23.png)
 
 2. The `ON`/`OFF` on left-side of `→` indicate what is currently enabled or disabled. Tap **L** or **I** option icons to toggle corresponding feature
 
-![Toggleable](../media/trime/trime24.png)
+![Toggleable](../media/android/android24.png)
 
 3. Enable or Disable:
    - **Lookalikes** (Default `ON`): If `OFF`, outputs corresponding Traditional characters instead. In cases where I couldn't find a suitable lookalike, will output Traditional regardless
 
-      ![Lookalikes](../media/trime/trime25.png)
+      ![Lookalikes](../media/android/android25.png)
 
    - **Indicate Lookalikes** (Default `OFF`): Shows `ᴸ` marker after each lookalike. **Requires** `Lookalikes ON` to function
 
-      ![Indicate Lookalikes](../media/trime/trime26.png)
+      ![Indicate Lookalikes](../media/android/android26.png)

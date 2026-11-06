@@ -4,55 +4,55 @@
 
 Access https://rime.im/download/. Under **Windows** section, click `下載` to download the latest compatible version of 小狼毫 Weasel
 
-![Download Weasel](../media/weasel/weasel1.png)
+![Download Weasel](../media/windows/windows1.png)
 
 Open the downloaded Weasel installer .exe file e.g. *weasel-0.17.0.0-installer.exe*. Click **I Agree** → **Install**
 
-![Weasel License Agreement](../media/weasel/weasel2.png)
+![Weasel License Agreement](../media/windows/windows2.png)
 
-![Install Weasel](../media/weasel/weasel3.png)
+![Install Weasel](../media/windows/windows3.png)
 
 Under **Schemas**, ensure you have `改革字 Reformed Chinese` checkmarked. Click **OK**
 
-![Schemas](../media/weasel/weasel4.png)
+![Schemas](../media/windows/windows4.png)
 
 Choose a Weasel theme (I recommend `碧水／Aqua`) and click **OK**. Select whether you want automatic Weasel update checks, then click **Finish** to complete Weasel installation
 
-![Themes](../media/weasel/weasel5.png)
+![Themes](../media/windows/windows5.png)
 
 ### Step 2: Download this GitHub repo
 
 On this GitHub repo [reformed-chinese-keyboard](https://github.com/ReformedChinese/reformed-chinese-keyboard), click the green **Code** button and then click **Download ZIP**
 
-![Download ZIP](../media/weasel/weasel6.png)
+![Download ZIP](../media/windows/windows6.png)
 
 Extract the downloaded `reformed-chinese-keyboard-main.zip` file. If your version of Windows cannot extract and you need software, I suggest [7-Zip](https://www.7-zip.org/download.html)
 
-![Extract ZIP](../media/weasel/weasel7.png)
+![Extract ZIP](../media/windows/windows7.png)
 
 ### Step 3: Install Reformed Chinese keyboard
 
 Inside your extracted `reformed-chinese-keyboard-main` folder, go into `windows` subfolder and double-click `ReformedKeyboardWindowsSetup.bat` which installs Reformed Chinese keyboard for you
 
-![ReformedKeyboardWindowsSetup.bat](../media/weasel/weasel8.png)
+![ReformedKeyboardWindowsSetup.bat](../media/windows/windows8.png)
 
 In the security pop-up, click **Run** to install Reformed Chinese keyboard
 
-![Security pop-up](../media/weasel/weasel9.png)
+![Security pop-up](../media/windows/windows9.png)
 
 You should see below screenshot once the installation completes
 
-![Install complete](../media/weasel/weasel10.png)
+![Install complete](../media/windows/windows10.png)
 
 Select Weasel by `⊞ Windows key`**+**`Spacebar` or from bottom-right corner of your Windows taskbar (Ignore "Traditional, Taiwan" as that is misleading, the keyboard is indeed Reformed Chinese not Traditional Chinese)
 
-![Select Weasel](../media/weasel/weasel11.png)
+![Select Weasel](../media/windows/windows11.png)
 
 Type some 拼音 Pinyin to verify you can output Reformed Chinese characters e.g. "zenmeyang" for 怎庅样, "babaofan" for 八宝飯, "wangqiuchang" for 罔球場. Enter the number on left of characters to output. If needed, press `-` or `=` keys to shortcut page through candidate characters
 
-![Input](../media/weasel/weasel12.png)
+![Input](../media/windows/windows12.png)
 
-![Output](../media/weasel/weasel13.png)
+![Output](../media/windows/windows13.png)
 
 If you're able to output Reformed Chinese characters such as in screenshot above, CONGRATULATIONS! You have verified you can type Reformed Chinese characters, here's a [list of other Reformed characters](https://docs.google.com/spreadsheets/d/1lK39EUCqPZukM4NCPzidQg1L0zzKc6zavR6WR9Z6XZQ/) you can try typing 🥳 Woo!
 
@@ -63,13 +63,13 @@ Reformed Chinese keyboard can optionally output similar-looking characters or va
 To toggle lookalike features:
 1. With Weasel selected, press `Ctrl`**+**`` ` `` to see lookalike options. Left-side shows what is currently enabled or disabled, press the corresponding number (`2` or `3`) to toggle a feature
 
-![Toggleable](../media/weasel/weasel14.png)
+![Toggleable](../media/windows/windows14.png)
 
 2. Enable or Disable:
    - **Lookalikes** (Default `ON`): If `OFF`, outputs corresponding Traditional characters instead. In cases where I couldn't find a suitable lookalike, will output Traditional regardless
 
-      ![Lookalikes](../media/weasel/weasel15.png)
+      ![Lookalikes](../media/windows/windows15.png)
 
    - **Indicate Lookalikes** (Default `OFF`): Shows `ᴸ` marker after each lookalike. **Requires** `Lookalikes ON` to function
 
-      ![Indicate Lookalikes](../media/weasel/weasel16.png)
+      ![Indicate Lookalikes](../media/windows/windows16.png)

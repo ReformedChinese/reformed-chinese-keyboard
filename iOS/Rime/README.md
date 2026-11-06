@@ -4,37 +4,37 @@
 
 On this GitHub repo [reformed-chinese-keyboard](https://github.com/ReformedChinese/reformed-chinese-keyboard), tap the green **Code** button and then tap **Download ZIP**
 
-![Download ZIP](../media/hamster/hamster1.png)
+![Download ZIP](../../media/iOS/iOS1.png)
 
 A pop-up asking to download `reformed-chinese-keyboard-main.zip` will appear, tap **Download**
 
-![Download ZIP pop-up](../media/hamster/hamster2.png)
+![Download ZIP pop-up](../../media/iOS/iOS2.png)
 
 Next to Safari search field, tap the Downloads button
 
-![Downloads button](../media/hamster/hamster3.png)
+![Downloads button](../../media/iOS/iOS3.png)
 
 Tap **Downloads** in the pop-up
 
-![See Downloads](../media/hamster/hamster4.png)
+![See Downloads](../../media/iOS/iOS4.png)
 
 Tap `reformed-chinese-keyboard-main.zip` which will direct you to Downloads folder
 
-![See Downloads](../media/hamster/hamster5.png)
+![See Downloads](../../media/iOS/iOS5.png)
 
 Inside Downloads folder, tap `reformed-chinese-keyboard-main.zip` to automatically extract its contents into a folder
 
-![Extract ZIP](../media/hamster/hamster6.png)
+![Extract ZIP](../../media/iOS/iOS6.png)
 
 ### Step 2: Install 仓输入法 Hamster
 
 Open iPhone App Store and search [仓输入法](https://apps.apple.com/app/%E4%BB%93%E8%BE%93%E5%85%A5%E6%B3%95/id6446617683). Tap **Get**
 
-![Get Hamster](../media/hamster/hamster7.png)
+![Get Hamster](../../media/iOS/iOS7.png)
 
 Tap **Install**
 
-![Install Hamster](../media/hamster/hamster8.png)
+![Install Hamster](../../media/iOS/iOS8.png)
 
 ### Step 3: Download Files to Phone
 
